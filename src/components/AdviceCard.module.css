@@ -17,7 +17,7 @@
 }
 
 .quote {
-  font-size: var(--paragraph-lg);
+  font-size: clamp(var(--paragraph-sm), 3vw, var(--paragraph-lg));
   margin-bottom: 4rem;
   color: var(--text-light-cyan);
   letter-spacing: 0.26px;
@@ -54,5 +54,19 @@
 
   100% {
     transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 512px) {
+  .heading {
+    font-size: 1.1rem;
+  }
+
+  .quote {
+    margin-bottom: 2.4rem;
+  }
+
+  .divider {
+    margin-bottom: 3.2rem;
   }
 }
