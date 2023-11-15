@@ -21,6 +21,7 @@
   margin-bottom: 4rem;
   color: var(--text-light-cyan);
   letter-spacing: 0.26px;
+  font-weight: 800;
 }
 
 .btn {

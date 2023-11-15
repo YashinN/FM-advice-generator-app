@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+
 :root {
   /* Color-Palette */
   --bg-dark-blue: #202733;
@@ -31,4 +33,5 @@ body {
   align-items: center;
   height: 100vh;
   padding: 1.6rem;
+  font-family: "Manrope", sans-serif;
 }
