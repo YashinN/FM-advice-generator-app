@@ -36,6 +36,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  box-shadow: 0 0 2rem 2px #53ffaa;
+  bottom: calc((-6.4rem / 2) + 3px);
+}
+
+.btn:active {
+  bottom: calc((-6.4rem / 2));
+  box-shadow: none;
 }
 
 .divider {
