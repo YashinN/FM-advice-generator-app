@@ -6,13 +6,15 @@ const useQuote = (dependancies = []) => {
 
   useEffect(() => {
     let randomID = Math.floor(Math.random() * 225 + 1);
+    const controller = new AbortController();
 
     const getQuote = async () => {
       setLoading(true);
 
       try {
         const res = await fetch(
-          `https://api.adviceslip.com/advice/${randomID}`
+          `https://api.adviceslip.com/advice/${randomID}`,
+          { signal: controller.signal }
         );
         const data = await res.json();
         setQuote(data.slip);
