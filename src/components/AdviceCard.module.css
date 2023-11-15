@@ -1,0 +1,27 @@
+.adviceCard {
+  max-width: 54rem;
+  padding: 4.8rem;
+  background-color: var(--bg-dark-grayish-blue);
+  border-radius: 1.5rem;
+  text-align: center;
+}
+
+.heading {
+  text-transform: uppercase;
+  margin-bottom: 2.4rem;
+  font-size: var(--h1-lg);
+  font-size: 1.3rem;
+}
+
+.quote {
+  font-size: var(--paragraph-lg);
+  margin-bottom: 4rem;
+  color: var(--text-light-cyan);
+}
+
+.btn {
+  height: 6.4rem;
+  width: 6.4rem;
+  border-radius: 100%;
+  border: none;
+}

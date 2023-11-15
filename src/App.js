@@ -1,8 +1,12 @@
-import logo from "./logo.svg";
-import "./App.css";
+import Main from "./components/Main";
+import AdviceCard from "./components/AdviceCard";
 
 function App() {
-  return <div className="App"></div>;
+  return (
+    <Main>
+      <AdviceCard />
+    </Main>
+  );
 }
 
 export default App;
