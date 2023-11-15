@@ -2,15 +2,11 @@ import styles from "./AdviceCard.module.css";
 import diceIcon from "./svg/icon-dice.svg";
 import dividerSvg from "./svg/pattern-divider-desktop.svg";
 
-const AdviceCard = () => {
+const AdviceCard = ({ quote }) => {
   return (
     <section className={styles.adviceCard}>
-      <h1 className={styles.heading}>advice #117</h1>
-      <blockquote className={styles.quote}>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
-        necessitatibus, ut reprehenderit amet dolorum autem accusamus
-        repudiandae odit deserunt praesentium?
-      </blockquote>
+      <h1 className={styles.heading}>advice #{quote?.id}</h1>
+      <blockquote className={styles.quote}>{quote?.advice}</blockquote>
 
       <img className={styles.divider} src={dividerSvg} alt="" />
       <button className={styles.btn}>
