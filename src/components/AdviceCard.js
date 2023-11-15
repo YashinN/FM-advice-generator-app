@@ -12,7 +12,7 @@ const AdviceCard = () => {
   return (
     <section className={styles.adviceCard}>
       <h1 className={styles.heading}>advice #{quote?.id}</h1>
-      <blockquote className={styles.quote}>" {quote?.advice} "</blockquote>
+      <blockquote className={styles.quote}>"{quote?.advice}"</blockquote>
       <img className={styles.divider} src={dividerSvg} alt="Divider" />
       <button className={styles.btn} onClick={() => setCount(count + 1)}>
         <img
