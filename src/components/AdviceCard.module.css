@@ -4,6 +4,7 @@
   background-color: var(--bg-dark-grayish-blue);
   border-radius: 1.5rem;
   text-align: center;
+  position: relative;
 }
 
 .heading {
@@ -11,12 +12,15 @@
   margin-bottom: 2.4rem;
   font-size: var(--h1-lg);
   font-size: 1.3rem;
+  color: var(--accent-neon-green);
+  letter-spacing: 3.46px;
 }
 
 .quote {
   font-size: var(--paragraph-lg);
   margin-bottom: 4rem;
   color: var(--text-light-cyan);
+  letter-spacing: 0.26px;
 }
 
 .btn {
@@ -24,4 +28,17 @@
   width: 6.4rem;
   border-radius: 100%;
   border: none;
+  background-color: var(--accent-neon-green);
+  position: absolute;
+  bottom: calc(-6.4rem / 2);
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.divider {
+  width: 100%;
+  margin-bottom: 4rem;
 }
